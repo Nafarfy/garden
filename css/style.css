@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Общие стили */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.yellow {
+  color: rgb(192, 192, 33);
+}
+
+.grey {
+  color: rgb(173, 173, 173);
+}
+
+.btn {
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1px;
+  transition: all .5s;
+  opacity: 0;
+  z-index: 3;
+}
+
+/* ХЭДЭР */
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#main-header .img-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  color: #fff;
+  padding: 10px;
+  margin-right: 1rem;
+  transition: all .5s;
+  z-index: 2;
+}
+
+#main-header .img-block:last-child {
+  margin-right: 0;
+}
+
+/* Затемнить картинку */
+#main-header .img-block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.4;
+}
+
+/* Создаем розовый блок и скрываем его*/
+#main-header .img-block:before {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 90%;
+  background: pink;
+  opacity: 0;
+  transition: all .5s;
+  z-index: 1;
+}
+
+/* Показываем розовый фон при наведении на img-block */
+#main-header .img-block:hover:before {
+  opacity: 0.9;
+}
+
+/* Показываем кнопку при наведении на img block */
+#main-header .img-block:hover .btn {
+  padding: 5px 25px;
+  font-size: 16px;
+  border: 3px solid #fff;
+  opacity: 1;
+}
+
+#main-header .img-block .img-text, 
+#main-header .img-block .img-h2 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+#main-header .img-block .img-text {
+  font-weight: bold;
+}
+
+#main-header .img-block .img-h2 {
+  letter-spacing: 3px;
+  font-size: 22px;
+}
+
+.award-winning {
+  background: url('../img/bg1.jpg')no-repeat center center/cover;
+}
+
+.indoor {
+  background: url('../img/bg2.jpg')no-repeat center center/cover;
+}
+
+.gifts {
+  background: url('../img/bg3.jpg')no-repeat center center/cover;
+}
+
+.garden {
+  background: url('../img/bg4.jpg')no-repeat center center/cover;
+}
+
+
+/* НАВИГАЦИЯ */
+
+#main-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+#main-nav ul li {
+  margin-right: 4rem;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all .5s;  
+  border-bottom: 1px solid rgba(0, 0,0, 0);
+}
+
+#main-nav ul li:last-child {
+  margin-right: 0;
+}
+
+#main-nav ul li:hover  {
+  color: rgb(212, 155, 165);
+  border-bottom: 1px solid #333;
+}
+
+
+/* Section price */
+
+#section-price {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#section-price .price-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+  width: 250px;
+  color: #333;
+}
+
+#section-price .price-item:last-child {
+  margin-right: 0;
+  margin-top: 19px;
+}
+
+#section-price .price-item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(230, 230, 230, 0.466);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+#section-price .price-item .img:after {
+  content: 'Распродажа!';
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 7.5px 5px 4.5px 5px;
+  background:  rgb(252, 185, 197);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#section-price .price-item .img:hover img {
+  transform: scale(1.3);
+}
+
+#section-price .price-item .img img {
+  width: 100%;
+  transition: all 1s;
+}
+
+#section-price .price-item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+#section-price .price-item p {
+  margin-top: .3rem;
+}
+
+#section-price .price-item .price {
+  color:  rgb(212, 155, 165);
+  font-weight: 900;
+  font-size: 17px;
+  margin-top: .7rem;
+}
+
+#section-price .price-item .price span {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+#section-price .price-item .stars {
+  margin-top: .6rem;
+}
