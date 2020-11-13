@@ -1,0 +1,142 @@
+@media(max-width: 768px) {
+  #main-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-header .img-block {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  #main-header .img-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    opacity: 1;
+    padding: 5px 25px;
+    font-size: 16px;
+    border: 2px solid #fff;
+  }
+
+  #main-header .img-block:hover .btn {
+    border: 2px solid #fff;
+  }
+
+  #main-header .img-block:hover:before {
+    opacity: 0;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-nav ul li {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  #section-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-price .price-item {
+    margin: 0 0 2rem 0;
+    padding-bottom: 2rem;
+    width: 300px;
+    border-bottom: 1px solid pink;
+  }
+
+  #section-price .price-item:last-child {
+    margin-top: 0;
+  }
+
+  #section-price .price-item:last-child {
+    border: none;
+  } 
+
+  #section-price .price-item .img:hover img {
+    transform: none;
+  }
+}
+
+
+@media(max-height: 375px) {
+  #main-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-header .img-block {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    height: 300px;
+  }
+
+  #main-header .img-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    opacity: 1;
+    padding: 5px 25px;
+    font-size: 16px;
+    border: 2px solid #fff;
+  }
+
+  #main-header .img-block:hover .btn {
+    border: 2px solid #fff;
+  }
+
+  #main-header .img-block:hover:before {
+    opacity: 0;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-nav ul li {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  #section-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-price .price-item {
+    margin: 0 0 2rem 0;
+    padding-bottom: 2rem;
+    width: 300px;
+    border-bottom: 1px solid pink;
+  }
+
+  #section-price .price-item:last-child {
+    margin-top: 0;
+  }
+
+  #section-price .price-item:last-child {
+    border: none;
+  } 
+
+  #section-price .price-item .img:hover img {
+    transform: none;
+  }
+}

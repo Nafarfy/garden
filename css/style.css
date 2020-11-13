@@ -33,6 +33,10 @@ li {
   z-index: 3;
 }
 
+.btn:hover {
+  background: rgba(255, 255, 255, 0.322);
+}
+
 /* ХЭДЭР */
 
 #main-header {
@@ -53,7 +57,6 @@ li {
   padding: 10px;
   margin-right: 1rem;
   transition: all .5s;
-  z-index: 2;
 }
 
 #main-header .img-block:last-child {
